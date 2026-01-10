@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khang Huynh | Creative Developer</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container navbar__content">
+        <a href="#" class="logo" style="color: var(--c-primary)">
+          khang<span style="color: var(--c-accent)">huynh</span>.
+        </a>
+        <div class="navbar__actions">
+          <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <span class="icon sun">☀</span>
+            <span class="icon moon">☾</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero scroll-hidden">
+      <div class="container hero__content scroll-reveal">
+        <h1 class="hero__title">
+          I turn static concepts into <br />
+          <span class="gradient-text">fluid, moving realities.</span>
+        </h1>
+        <p class="hero__subtitle">
+          Hi, I'm Khang. A creative developer specializing in modern websites
+          and motion graphics.
+        </p>
+        <div style="display: flex; gap: 1rem">
+          <a href="#work" class="btn btn--primary">See My Work</a>
+          <a
+            href="#contact"
+            class="btn"
+            style="border: 1px solid var(--c-border)"
+            >Let's Talk</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section id="work" class="section scroll-hidden">
+      <div class="container">
+        <h2 class="section-title scroll-reveal">Recent Projects</h2>
+        <div class="grid">
+          <article class="card scroll-reveal">
+            <div class="card__image">
+              <div class="placeholder-img"></div>
+              <span class="badge">Web Dev</span>
+            </div>
+            <div class="card__content">
+              <h3>FPT University 20th Anniversary</h3>
+              <p>Event landing page with interactive timeline animations.</p>
+              <a href="#" class="link-arrow">View Case Study &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card scroll-reveal" style="transition-delay: 100ms">
+            <div class="card__image">
+              <div class="placeholder-img"></div>
+              <span class="badge">Motion</span>
+            </div>
+            <div class="card__content">
+              <h3>Real Estate Kinetic Promo</h3>
+              <p>High-energy motion graphic video for property marketing.</p>
+              <a href="#" class="link-arrow">Watch Video &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="section scroll-hidden"
+      style="background: rgba(var(--c-primary), 0.03)"
+    >
+      <div class="container">
+        <h2 class="section-title scroll-reveal">About Me</h2>
+
+        <div class="about-wrapper scroll-reveal">
+          <div class="about-image">
+            <div class="img-box">
+              <img
+                src="https://via.placeholder.com/400x500"
+                alt="Khang Huynh"
+              />
+            </div>
+          </div>
+
+          <div class="about-text">
+            <h3>Developer & Motion Designer</h3>
+            <p class="bio">
+              I am a student passionate about bridging the gap between design
+              and code. While many focus on one, I thrive in the
+              intersection—building robust websites that don't just function,
+              but feel alive through motion.
+            </p>
+            <p class="bio">
+              My workflow integrates tools like After Effects for prototyping
+              complex animations and implementing them on the web using SCSS and
+              JavaScript.
+            </p>
+
+            <div class="skill-tags">
+              <span>JavaScript</span>
+              <span>SCSS</span>
+              <span>After Effects</span>
+              <span>Motion Graphics</span>
+              <span>UI/UX Design</span>
+              <span>React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-layout scroll-reveal">
+        <h2 class="section-title">Get In Touch</h2>
+        <p style="color: var(--c-text-muted)">
+          Have a project in mind or just want to say hi? Drop me a message.
+        </p>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="What's your name?" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Where can I reach you?"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              placeholder="Tell me about your project..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Khang Huynh. Made with Blue & Orange.</p>
+      </div>
+    </footer>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
