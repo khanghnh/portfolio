@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import legalData from '../data/legalPolicies.json';
 import type { LegalPoliciesData } from '../types';
-import { Navbar, Footer, ScrollReveal, Button } from '../components';
+import { Navbar, Footer, ScrollReveal } from '../components';
 
 interface LegalPageProps {
   initialDocId?: string;
@@ -108,23 +108,6 @@ export const LegalPage: React.FC<LegalPageProps> = ({ initialDocId }) => {
             </ScrollReveal>
           ))}
         </div>
-
-        {/* ── FOOTER CTA (INQUIRIES) ── */}
-        <ScrollReveal delay={300}>
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-6 rounded-2xl bg-bg-surface border border-border-subtle mt-6">
-            <div className="flex flex-col gap-1 text-center sm:text-left">
-              <span className="font-bold text-txt-primary text-base">Have legal questions or need project licensing?</span>
-              <span className="font-['Space_Grotesk'] text-xs sm:text-sm text-txt-muted">Direct inquiries are answered promptly via email.</span>
-            </div>
-            <Button
-              href="mailto:khghnh.work@gmail.com"
-              variant="primary"
-              size="sm"
-            >
-              Contact Legal Inquiries →
-            </Button>
-          </div>
-        </ScrollReveal>
 
       </main>
 

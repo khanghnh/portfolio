@@ -96,7 +96,7 @@ export const DualPersonaCard: React.FC<DualPersonaCardProps> = ({
           title="Click to toggle perspective"
           aria-label="Toggle between Developer and Designer perspectives"
         >
-          <span className="text-txt-muted group-hover:text-txt-secondary transition-colors">EXPLORE:</span>
+          <span className="text-txt-muted group-hover:text-txt-secondary transition-colors">I ALSO :</span>
           <span className="text-brand-primary font-bold transition-transform duration-200 group-hover:translate-x-0.5">
             {isDev ? dev.toggleButtonText : des.toggleButtonText}
           </span>

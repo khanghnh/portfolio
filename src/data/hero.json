@@ -8,26 +8,39 @@
   },
   "personas": {
     "developer": {
-      "perspectiveTag": "[ 01 // FULLSTACK DEVELOPMENT · REACT & NESTJS ]",
-      "toggleButtonText": "DESIGN & MOTION ↗",
+      "perspectiveTag": "[ 01 // SOFTWARE & WEBSITE ENGINEER ]",
+      "toggleButtonText": "DESIGN ↗",
       "headlineWord1": "FULLSTACK",
       "headlineWord2": "DEVELOPER",
       "tagline": "Delivering fast, responsive frontend applications with React & TypeScript, backed by robust server-side architectures in NestJS and Node.js.",
-      "highlightStack": ["React", "TypeScript", "Tailwind", "NestJS", "Node.js", "Git"]
+      "highlightStack": [
+        "React",
+        "TypeScript",
+        "Tailwind",
+        "NestJS",
+        "Node.js",
+        "Git"
+      ]
     },
     "designer": {
-      "perspectiveTag": "[ 01 // CREATIVE DIRECTION · GRAPHIC & MOTION ]",
-      "toggleButtonText": "FULLSTACK CODE ↗",
+      "perspectiveTag": "[ 01 // VIDEO EDITOR & GRAPHIC DESIGNER ]",
+      "toggleButtonText": "CODE ↗",
       "headlineWord1": "Graphic & Motion",
       "headlineWord2": "Designer",
       "tagline": "Transforming brand visions through impactful poster art, bespoke visual identities, and dynamic video editing engineered for modern engagement.",
-      "highlightStack": ["Premiere", "After Effects", "Photoshop", "Illustrator", "Figma"]
+      "highlightStack": [
+        "Premiere",
+        "After Effects",
+        "Photoshop",
+        "Illustrator",
+        "Figma"
+      ]
     }
   },
   "actions": {
-    "worksButtonText": "Explore Works ↓",
+    "worksButtonText": "Explore Works",
     "worksTarget": "#works",
-    "contactButtonText": "Start a Project →",
+    "contactButtonText": "Start a Project",
     "contactTarget": "#cta",
     "footnoteBadge": "OPEN FOR ROLES & FREELANCE PROJECTS · 2026"
   },

@@ -7,12 +7,12 @@
     "word1": "LET’S WORK",
     "word2": "TOGETHER."
   },
-  "subtitle": "Have an upcoming project, hiring need, or creative vision? Let’s engineer scalable software and craft distinctive visual experiences.",
+  "subtitle": "Have a project, open role, or creative vision? Let’s build something exceptional.",
   "email": "khanghuynh6587@gmail.com",
   "copyEmail": {
     "defaultText": "COPY EMAIL // KHANGHUYNH6587@GMAIL.COM",
-    "copiedText": "✓ COPIED TO CLIPBOARD",
-    "icon": "⧉"
+    "copiedText": "COPIED TO CLIPBOARD",
+    "icon": ""
   },
   "backToTop": {
     "label": "BACK TO TOP",

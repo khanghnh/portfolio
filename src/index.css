@@ -234,16 +234,77 @@
 .logo-char-wrapper:nth-child(9) .logo-char-primary, .logo-char-wrapper:nth-child(9) .logo-char-serif { transition-delay: 0.20s; }
 .logo-char-wrapper:nth-child(10) .logo-char-primary, .logo-char-wrapper:nth-child(10) .logo-char-serif { transition-delay: 0.225s; }
 
-/* On hover: cross-fade and scale wave */
-.logo-morph-link:hover .logo-char-primary {
-  opacity: 0;
-  transform: translateY(-4px) scale(1.1);
-  color: var(--color-primary);
+/* On desktop with mouse: hover cross-fade and scale wave */
+@media (hover: hover) and (pointer: fine) {
+  .logo-morph-link:hover .logo-char-primary {
+    opacity: 0;
+    transform: translateY(-4px) scale(1.1);
+    color: var(--color-primary);
+  }
+
+  .logo-morph-link:hover .logo-char-serif {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.22);
+  }
 }
 
-.logo-morph-link:hover .logo-char-serif {
-  opacity: 1;
-  transform: translateY(-2px) scale(1.22);
+/* On mobile touch devices: autonomous subtle breathing morph wave & tactile active press */
+@media (hover: none) {
+  .logo-morph-link:active {
+    transform: scale(0.96);
+    transition: transform 0.12s ease-out;
+  }
+
+  .logo-char-wrapper:nth-child(1) .logo-char-primary, .logo-char-wrapper:nth-child(1) .logo-char-serif { animation-delay: 0.00s; }
+  .logo-char-wrapper:nth-child(2) .logo-char-primary, .logo-char-wrapper:nth-child(2) .logo-char-serif { animation-delay: 0.06s; }
+  .logo-char-wrapper:nth-child(3) .logo-char-primary, .logo-char-wrapper:nth-child(3) .logo-char-serif { animation-delay: 0.12s; }
+  .logo-char-wrapper:nth-child(4) .logo-char-primary, .logo-char-wrapper:nth-child(4) .logo-char-serif { animation-delay: 0.18s; }
+  .logo-char-wrapper:nth-child(5) .logo-char-primary, .logo-char-wrapper:nth-child(5) .logo-char-serif { animation-delay: 0.24s; }
+  .logo-char-wrapper:nth-child(6) .logo-char-primary, .logo-char-wrapper:nth-child(6) .logo-char-serif { animation-delay: 0.30s; }
+  .logo-char-wrapper:nth-child(7) .logo-char-primary, .logo-char-wrapper:nth-child(7) .logo-char-serif { animation-delay: 0.36s; }
+  .logo-char-wrapper:nth-child(8) .logo-char-primary, .logo-char-wrapper:nth-child(8) .logo-char-serif { animation-delay: 0.42s; }
+  .logo-char-wrapper:nth-child(9) .logo-char-primary, .logo-char-wrapper:nth-child(9) .logo-char-serif { animation-delay: 0.48s; }
+  .logo-char-wrapper:nth-child(10) .logo-char-primary, .logo-char-wrapper:nth-child(10) .logo-char-serif { animation-delay: 0.54s; }
+
+  .logo-morph-link .logo-char-primary {
+    animation: mobilePrimaryWave 7s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  }
+
+  .logo-morph-link .logo-char-serif {
+    animation: mobileSerifWave 7s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  }
+
+  @keyframes mobilePrimaryWave {
+    0%, 38%, 100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      color: var(--text-primary);
+    }
+    12%, 22% {
+      opacity: 0;
+      transform: translateY(-3px) scale(1.08);
+      color: var(--color-primary);
+    }
+  }
+
+  @keyframes mobileSerifWave {
+    0%, 38%, 100% {
+      opacity: 0;
+      transform: translateY(3px) scale(0.92);
+    }
+    12%, 22% {
+      opacity: 1;
+      transform: translateY(-1px) scale(1.18);
+    }
+  }
+
+  /* Tactile touch press on mobile */
+  .btn-swipe-fill:active,
+  .btn-text-bracket:active,
+  button:active {
+    transform: scale(0.97);
+    transition: transform 0.1s ease-out;
+  }
 }
 
 /* Kinetic diagonal fill animation for CTA button */

@@ -7,17 +7,19 @@ export const Footer: React.FC = () => {
   const footer: FooterData = footerData as FooterData;
 
   return (
-    <footer className="w-full bg-[#0a0a0a] py-6 sm:py-8 transition-colors">
+    <footer className="w-full bg-[#0a0a0a] py-6 sm:py-8 transition-colors border-t border-border-subtle/40">
       <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 font-mono text-[11px] sm:text-xs text-txt-muted text-center md:text-left">
 
-        {/* Left: Identity & Position */}
+        {/* Left: Identity & Copyright */}
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 sm:gap-3">
           <span className="font-bold text-txt-primary">{footer.brand.name}</span>
-          <span className="hidden sm:inline">/</span>
-          <span className="text-txt-secondary">{footer.brand.role}</span>
+          <span className="hidden sm:inline text-txt-muted/60">/</span>
+          <span className="text-txt-secondary tracking-wider">
+            © {footer.brand.year} ALL RIGHTS RESERVED
+          </span>
         </div>
 
-        {/* Right: Legal Links & Copyright */}
+        {/* Right: Clean Legal Links */}
         <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-4 sm:gap-x-5 gap-y-2">
           {footer.legalLinks.map((item) => (
             <Link
@@ -28,10 +30,6 @@ export const Footer: React.FC = () => {
               {item.label}
             </Link>
           ))}
-          <span className="text-border-subtle hidden sm:inline">|</span>
-          <span className="text-brand-primary font-bold tracking-wider">
-            © {footer.brand.year} ALL RIGHTS RESERVED
-          </span>
         </div>
 
       </div>
