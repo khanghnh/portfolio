@@ -1,0 +1,31 @@
+{
+  "brand": {
+    "name": "KHANG HUYNH",
+    "role": "FRESHER FULLSTACK DEVELOPER & DESIGNER",
+    "year": "2026",
+    "location": "HCMC, VIETNAM",
+    "status": "ALL SYSTEMS OPERATIONAL"
+  },
+  "legalLinks": [
+    {
+      "id": "privacy",
+      "label": "PRIVACY POLICY",
+      "href": "/privacy"
+    },
+    {
+      "id": "terms",
+      "label": "TERMS OF SERVICE",
+      "href": "/terms"
+    },
+    {
+      "id": "cookies",
+      "label": "COOKIE POLICY",
+      "href": "/cookies"
+    },
+    {
+      "id": "licenses",
+      "label": "LICENSES",
+      "href": "/licenses"
+    }
+  ]
+}

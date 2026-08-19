@@ -1,0 +1,26 @@
+{
+  "logoText": "khanghuynh.",
+  "logoTitle": "khanghuynh · return home",
+  "location": "HCMC, VIETNAM",
+  "timezone": "GMT+7",
+  "defaultTime": "18:01:03 GMT+7",
+  "defaultDate": "AUG 20, 2026",
+  "navLinks": [
+    {
+      "id": "works",
+      "label": "WORKS ↓",
+      "href": "#works"
+    },
+    {
+      "id": "contact",
+      "label": "CONTACT →",
+      "href": "#cta"
+    }
+  ],
+  "author": {
+    "name": "Khang Huynh",
+    "title": "Fresher Fullstack Developer & Designer",
+    "location": "HCMC, Vietnam",
+    "year": "2026"
+  }
+}

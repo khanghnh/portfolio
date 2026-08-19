@@ -1,0 +1,21 @@
+{
+  "controlStrip": {
+    "tag": "[ 04 // INITIATE TRANSMISSION ]",
+    "status": "STATUS: AVAILABLE FOR WORK"
+  },
+  "headline": {
+    "word1": "LET’S WORK",
+    "word2": "TOGETHER."
+  },
+  "subtitle": "Have a project or vision? Let’s engineer scalable software & bespoke visual craft.",
+  "email": "khanghuynh.dev@gmail.com",
+  "copyEmail": {
+    "defaultText": "COPY EMAIL // KHANGHUYNH.DEV@GMAIL.COM",
+    "copiedText": "✓ COPIED TO CLIPBOARD",
+    "icon": "⧉"
+  },
+  "backToTop": {
+    "label": "BACK TO TOP",
+    "arrow": "↑"
+  }
+}
