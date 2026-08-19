@@ -24,7 +24,7 @@ export const CtaSection: React.FC = () => {
 
   const handleCopyEmail = (e: React.MouseEvent) => {
     e.preventDefault();
-    copy(cta.email || 'khanghuynh.dev@gmail.com');
+    copy(cta.email || 'khanghuynh6587@gmail.com');
   };
 
   // Helper to render character-by-character kinetic spring entrance
@@ -98,15 +98,20 @@ export const CtaSection: React.FC = () => {
             </div>
 
             {/* Monumental Headline Area */}
-            <div ref={headlineRef} className="flex flex-col gap-6 sm:gap-8 select-none">
+            <div ref={headlineRef} className="flex flex-col gap-3 sm:gap-6 lg:gap-8 select-none">
+
+              {/* Mobile / Touch Tap Indicator */}
+              <div className="flex lg:hidden items-center gap-1.5 font-mono text-[10px] sm:text-xs uppercase tracking-widest text-brand-primary font-bold">
+                <span>[ TAP TO SEND EMAIL ↗ ]</span>
+              </div>
 
               {/* Big Kinetic Headline as Interactive Mailto Trigger */}
               <a
-                href={`mailto:${cta.email || 'khanghuynh.dev@gmail.com'}`}
+                href={`mailto:${cta.email || 'khanghuynh6587@gmail.com'}`}
                 onMouseEnter={() => setIsHoveringEmail(true)}
                 onMouseLeave={() => setIsHoveringEmail(false)}
                 onMouseMove={handleMouseMove}
-                className="group/email flex flex-col font-['Anton'] uppercase leading-[0.88] sm:leading-[0.84] tracking-tight text-txt-primary cursor-none select-none"
+                className="group/email flex flex-col font-['Anton'] uppercase leading-[0.88] sm:leading-[0.84] tracking-tight text-txt-primary cursor-none select-none active:opacity-80 active:scale-[0.99] transition-all"
                 title="Click to send an email"
                 aria-label="Click to send an email"
               >
@@ -116,9 +121,12 @@ export const CtaSection: React.FC = () => {
                     {renderKineticText(cta.headline.word1, 100, 20)}
                   </div>
 
-                  {/* Word 2: TOGETHER. */}
-                  <div className="text-[13vw] sm:text-[10vw] md:text-[9vw] lg:text-[120px] xl:text-[155px] 2xl:text-[180px] text-brand-primary mt-0.5 lg:mt-0 whitespace-nowrap">
-                    {renderKineticText(cta.headline.word2, 320, 20)}
+                  {/* Word 2: TOGETHER. with mobile arrow indicator */}
+                  <div className="flex items-baseline text-[13vw] sm:text-[10vw] md:text-[9vw] lg:text-[120px] xl:text-[155px] 2xl:text-[180px] text-brand-primary mt-0.5 lg:mt-0 whitespace-nowrap">
+                    <span>{renderKineticText(cta.headline.word2, 320, 20)}</span>
+                    <span className="inline-block lg:hidden font-mono text-[10vw] sm:text-[7vw] text-brand-primary animate-pulse ml-1 align-baseline">
+                      ↗
+                    </span>
                   </div>
                 </div>
               </a>

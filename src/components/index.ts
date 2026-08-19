@@ -12,3 +12,4 @@ export * from './CtaSection';
 export * from './BugSmashGame';
 export * from './CaseStudyModal';
 export * from './CategoryFilterDropdown';
+export * from './ZigzagDivider';

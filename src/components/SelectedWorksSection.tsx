@@ -35,10 +35,10 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({ work
 
       {/* ── SECTION HEADER & DYNAMIC CATEGORY FILTER DROPDOWN ── */}
       <ScrollReveal className="relative z-30">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b-2 border-border-subtle pb-5">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-border-default pb-5">
           <div className="flex flex-col gap-1 sm:gap-1.5">
             <span className="font-mono text-[10px] sm:text-xs md:text-sm uppercase tracking-widest text-brand-primary font-bold">
-              02 // MAJOR CASE STUDIES
+              02 // SELECTED CASE STUDIES
             </span>
             <h2 className="font-['Anton'] text-4xl sm:text-6xl md:text-7xl lg:text-8xl uppercase tracking-tight text-txt-primary">
               Selected Works
@@ -47,7 +47,7 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({ work
 
           <div className="flex items-center gap-4 flex-wrap">
             <span className="font-mono text-xs text-txt-muted uppercase hidden lg:inline-block">
-              CLICK ROW TO EXPAND BREAKDOWN
+              CLICK ROW TO EXPAND CASE STUDY
             </span>
 
             {/* Dynamic Category Filter Dropdown */}
@@ -62,10 +62,26 @@ export const SelectedWorksSection: React.FC<SelectedWorksSectionProps> = ({ work
       </ScrollReveal>
 
       {/* ── INTERACTIVE EXPANDABLE ACCORDION ROWS ── */}
-      <div className="flex flex-col border-t border-border-subtle">
+      <div className="flex flex-col">
         {filteredWorks.length === 0 ? (
-          <div className="py-16 text-center font-mono text-xs sm:text-sm text-txt-muted">
-            NO PROJECTS FOUND FOR CURRENT FILTER.
+          <div className="py-20 px-6 flex flex-col items-center justify-center gap-3.5 text-center border border-dashed border-border-subtle/80 rounded-2xl bg-bg-surface/30 my-4 select-none">
+            <span className="font-mono text-xs text-brand-primary font-bold tracking-widest uppercase">
+              [ 00 // CASE STUDIES IN PROGRESS ]
+            </span>
+            <p className="font-['Space_Grotesk'] text-base sm:text-lg text-txt-primary font-medium">
+              {works.length === 0
+                ? 'Featured projects and client case studies are currently being updated. Check back shortly.'
+                : 'No projects match the selected category filter.'}
+            </p>
+            {works.length > 0 && (
+              <button
+                type="button"
+                onClick={() => setActiveCategory('all')}
+                className="font-mono text-xs text-txt-muted hover:text-brand-primary font-bold transition-colors cursor-pointer mt-1"
+              >
+                [ RESET FILTER TO ALL ↺ ]
+              </button>
+            )}
           </div>
         ) : (
           filteredWorks.map((work, index) => {

@@ -8,18 +8,18 @@
   "navLinks": [
     {
       "id": "works",
-      "label": "WORKS ↓",
+      "label": "WORKS",
       "href": "#works"
     },
     {
       "id": "contact",
-      "label": "CONTACT →",
+      "label": "CONTACT",
       "href": "#cta"
     }
   ],
   "author": {
     "name": "Khang Huynh",
-    "title": "Fresher Fullstack Developer & Designer",
+    "title": "Fullstack Developer (React & NestJS) · Graphic & Motion Designer",
     "location": "HCMC, Vietnam",
     "year": "2026"
   }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
+import { TechIcon } from './TechIcon';
 import { DualMorphChars, DualMorphWords } from './MorphText';
 import { smoothScrollTo } from '../utils/smoothScroll';
 import heroJson from '../data/hero.json';
@@ -42,6 +43,12 @@ export const DualPersonaCard: React.FC<DualPersonaCardProps> = ({
         return (
           <svg viewBox="0 0 24 24" className="w-5 h-5 text-[#f0f6fc] group-hover:scale-120 group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.5)] transition-all duration-200" fill="currentColor">
             <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+        );
+      case 'behance':
+        return (
+          <svg viewBox="0 0 24 24" className="w-5 h-5 text-[#0057ff] group-hover:scale-120 group-hover:drop-shadow-[0_0_12px_rgba(0,87,255,0.6)] transition-all duration-200" fill="currentColor">
+            <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-4.254 0-5.625-3.323-5.625-5.945 0-3.352 2.006-6.055 5.766-6.055 4.004 0 5.234 3.016 4.961 6.314h-8.172c.039 1.957 1.055 3.633 3.438 3.633 1.836 0 2.875-.852 3.328-1.947h1.405zm-7.984-4.5h5.594c-.062-1.688-.891-3.055-2.734-3.055-1.922 0-2.797 1.344-2.86 3.055zm-11.742-7.5h4.945c2.406 0 4.055 1.109 4.055 3.125 0 1.203-.641 2.148-1.742 2.656 1.484.492 2.195 1.633 2.195 3.094 0 2.375-1.938 3.625-4.516 3.625h-4.938v-12.5zm2.5 4.875h2.156c1.172 0 1.953-.453 1.953-1.422 0-.93-.75-1.391-1.922-1.391h-2.188v2.813zm0 5.563h2.375c1.328 0 2.188-.531 2.188-1.625 0-1.078-.891-1.594-2.203-1.594h-2.359v3.219z" />
           </svg>
         );
       case 'linkedin':
@@ -89,7 +96,7 @@ export const DualPersonaCard: React.FC<DualPersonaCardProps> = ({
           title="Click to toggle perspective"
           aria-label="Toggle between Developer and Designer perspectives"
         >
-          <span className="text-txt-muted group-hover:text-txt-secondary transition-colors">I ALSO:</span>
+          <span className="text-txt-muted group-hover:text-txt-secondary transition-colors">EXPLORE:</span>
           <span className="text-brand-primary font-bold transition-transform duration-200 group-hover:translate-x-0.5">
             {isDev ? dev.toggleButtonText : des.toggleButtonText}
           </span>
@@ -124,7 +131,7 @@ export const DualPersonaCard: React.FC<DualPersonaCardProps> = ({
       </div>
 
       {/* ── CORE PUNCHLINE (CLEAN & CONCISE) ── */}
-      <div className="flex flex-col gap-4 sm:gap-5">
+      <div className="flex flex-col gap-3.5 sm:gap-4">
         <p className="font-['Space_Grotesk'] text-lg sm:text-xl md:text-2xl text-txt-primary font-medium leading-relaxed max-w-2xl">
           <DualMorphWords
             textA={dev.tagline}
@@ -133,6 +140,29 @@ export const DualPersonaCard: React.FC<DualPersonaCardProps> = ({
             staggerMs={12}
           />
         </p>
+
+        {/* ── SUBTLE STACK FOCUS LOGOS (ICON ONLY, BORDERLESS) ── */}
+        <div className="flex items-center gap-3 sm:gap-4 select-none flex-wrap pt-1">
+          <span className="font-mono text-[10px] sm:text-[11px] text-txt-muted/70 uppercase tracking-widest font-semibold mr-1">
+            STACK //
+          </span>
+          <div className="flex items-center gap-2.5 sm:gap-3 flex-wrap">
+            {(isDev ? dev.highlightStack : des.highlightStack).map((tech) => (
+              <div
+                key={tech}
+                className="group flex items-center justify-center transition-transform duration-200 hover:scale-115 cursor-default"
+                title={tech}
+              >
+                <TechIcon
+                  name={tech}
+                  size={20}
+                  showTooltip={true}
+                  className="opacity-60 group-hover:opacity-100 transition-opacity duration-200"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* ── BOTTOM ZONE: ACTION CTA & BORDERLESS SOCIALS ── */}

@@ -2,59 +2,53 @@
   "portrait": {
     "imageUrl": "/portrait.jpg",
     "alt": "Khang Huynh portrait",
-    "tagTop": "PORTRAIT // KHANG HUYNH",
-    "tagBottomLeft": "HCMC, VIETNAM",
-    "tagBottomRight": "DEV & DESIGN // 2026"
+    "tagTop": "KHANG HUYNH // PORTFOLIO",
+    "tagBottomLeft": "BASED IN HCMC, VIETNAM",
+    "tagBottomRight": "● OPEN FOR WORK"
   },
   "personas": {
     "developer": {
-      "perspectiveTag": "01 // SOFTWARE ARCHITECT",
-      "toggleButtonText": "DESIGN ↗",
+      "perspectiveTag": "[ 01 // FULLSTACK DEVELOPMENT · REACT & NESTJS ]",
+      "toggleButtonText": "DESIGN & MOTION ↗",
       "headlineWord1": "FULLSTACK",
       "headlineWord2": "DEVELOPER",
-      "tagline": "Architecting resilient backend microservices, scalable distributed APIs, and fluid 60 FPS web interfaces.",
-      "highlightStack": ["NestJS", "React", "TypeScript", "Tailwind", "NodeJS", "Git"]
+      "tagline": "Delivering fast, responsive frontend applications with React & TypeScript, backed by robust server-side architectures in NestJS and Node.js.",
+      "highlightStack": ["React", "TypeScript", "Tailwind", "NestJS", "Node.js", "Git"]
     },
     "designer": {
-      "perspectiveTag": "01 // CREATIVE DIRECTOR",
-      "toggleButtonText": "DEVELOP ↗",
+      "perspectiveTag": "[ 01 // CREATIVE DIRECTION · GRAPHIC & MOTION ]",
+      "toggleButtonText": "FULLSTACK CODE ↗",
       "headlineWord1": "Graphic & Motion",
       "headlineWord2": "Designer",
-      "tagline": "Crafting bespoke brand visual identities, tactical vector systems, and kinetic motion sequences.",
-      "highlightStack": ["Illustrator", "Photoshop", "AfterEffects", "Premiere", "Lightroom", "Figma"]
+      "tagline": "Transforming brand visions through impactful poster art, bespoke visual identities, and dynamic video editing engineered for modern engagement.",
+      "highlightStack": ["Premiere", "After Effects", "Photoshop", "Illustrator", "Figma"]
     }
   },
   "actions": {
-    "worksButtonText": "Take a look around ↓",
+    "worksButtonText": "Explore Works ↓",
     "worksTarget": "#works",
-    "contactButtonText": "Get in touch →",
+    "contactButtonText": "Start a Project →",
     "contactTarget": "#cta",
-    "footnoteBadge": "FRESHER DEVELOPER & DESIGNER · 2026"
+    "footnoteBadge": "OPEN FOR ROLES & FREELANCE PROJECTS · 2026"
   },
   "socials": [
     {
       "id": "github",
       "platform": "GITHUB",
-      "url": "https://github.com",
+      "url": "https://github.com/khghnh",
       "type": "github"
+    },
+    {
+      "id": "behance",
+      "platform": "BEHANCE",
+      "url": "https://www.behance.net/khanghuynh39",
+      "type": "behance"
     },
     {
       "id": "linkedin",
       "platform": "LINKEDIN",
-      "url": "https://linkedin.com",
+      "url": "https://www.linkedin.com/in/khanghuynh11/",
       "type": "linkedin"
-    },
-    {
-      "id": "instagram",
-      "platform": "INSTAGRAM",
-      "url": "https://instagram.com",
-      "type": "instagram"
-    },
-    {
-      "id": "facebook",
-      "platform": "FACEBOOK",
-      "url": "https://facebook.com",
-      "type": "facebook"
     }
   ]
 }

@@ -10,7 +10,8 @@ import {
   ExperimentsSection,
   Footer,
   DualPersonaCard,
-  CtaSection
+  CtaSection,
+  ZigzagDivider
 } from '../components';
 
 export default function HomePage() {
@@ -130,10 +131,13 @@ export default function HomePage() {
         </main>
       </section>
 
+      {/* ── SAWTOOTH ZIGZAG DIVIDER: HERO -> WORKS ── */}
+      <ZigzagDivider />
+
       {/* ── SECTION 2: WORKS (SELECTED WORKS & EXPERIMENTS) ── */}
       <section
         id="works"
-        className="w-full bg-[#0a0a0a] border-t-2 border-border-default pb-16 sm:pb-24 scroll-mt-0"
+        className="w-full bg-[#0a0a0a] pb-16 sm:pb-24 scroll-mt-0"
       >
         {/* Selected Works Accordion Section */}
         <SelectedWorksSection works={selectedWorks} />
@@ -142,8 +146,11 @@ export default function HomePage() {
         <ExperimentsSection experiments={experiments} />
       </section>
 
+      {/* ── SAWTOOTH ZIGZAG DIVIDER: WORKS -> CTA ── */}
+      <ZigzagDivider />
+
       {/* ── SECTION 3: CTA TRANSMISSION ── */}
-      <section id="cta" className="w-full bg-bg-main border-t-2 border-border-default scroll-mt-0">
+      <section id="cta" className="w-full bg-bg-main scroll-mt-0">
         <CtaSection />
       </section>
 

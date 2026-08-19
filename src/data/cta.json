@@ -1,16 +1,16 @@
 {
   "controlStrip": {
-    "tag": "[ 04 // INITIATE TRANSMISSION ]",
-    "status": "STATUS: AVAILABLE FOR WORK"
+    "tag": "[ 04 // START A CONVERSATION ]",
+    "status": "STATUS: OPEN FOR NEW OPPORTUNITIES"
   },
   "headline": {
     "word1": "LET’S WORK",
     "word2": "TOGETHER."
   },
-  "subtitle": "Have a project or vision? Let’s engineer scalable software & bespoke visual craft.",
-  "email": "khanghuynh.dev@gmail.com",
+  "subtitle": "Have an upcoming project, hiring need, or creative vision? Let’s engineer scalable software and craft distinctive visual experiences.",
+  "email": "khanghuynh6587@gmail.com",
   "copyEmail": {
-    "defaultText": "COPY EMAIL // KHANGHUYNH.DEV@GMAIL.COM",
+    "defaultText": "COPY EMAIL // KHANGHUYNH6587@GMAIL.COM",
     "copiedText": "✓ COPIED TO CLIPBOARD",
     "icon": "⧉"
   },

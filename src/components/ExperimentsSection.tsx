@@ -68,14 +68,14 @@ export const ExperimentsSection: React.FC<ExperimentsSectionProps> = ({ experime
   };
 
   return (
-    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 py-14 sm:py-20 border-t-2 border-border-subtle flex flex-col gap-10 sm:gap-12">
+    <section className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 py-14 sm:py-20 flex flex-col gap-10 sm:gap-12">
 
       {/* ── SECTION HEADER & DYNAMIC CATEGORY FILTER DROPDOWN ── */}
       <ScrollReveal className="relative z-30">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b-2 border-border-subtle pb-5">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-border-default pb-5">
           <div className="flex flex-col gap-1 sm:gap-1.5">
             <span className="font-mono text-[10px] sm:text-xs md:text-sm uppercase tracking-widest text-brand-primary font-bold">
-              03 // LAB &amp; PROTOTYPES
+              03 // LAB &amp; INTERACTION PROTOTYPES
             </span>
             <h2 className="font-['Anton'] text-4xl sm:text-6xl md:text-7xl lg:text-8xl uppercase tracking-tight text-txt-primary">
               Experiments
@@ -99,10 +99,26 @@ export const ExperimentsSection: React.FC<ExperimentsSectionProps> = ({ experime
       </ScrollReveal>
 
       {/* ── INTERACTIVE EXPANDABLE ACCORDION ROWS ── */}
-      <div className="flex flex-col border-t border-border-subtle">
+      <div className="flex flex-col">
         {filteredExperiments.length === 0 ? (
-          <div className="py-16 text-center font-mono text-xs sm:text-sm text-txt-muted">
-            NO EXPERIMENTS FOUND FOR CURRENT FILTER.
+          <div className="py-20 px-6 flex flex-col items-center justify-center gap-3.5 text-center border border-dashed border-border-subtle/80 rounded-2xl bg-bg-surface/30 my-4 select-none">
+            <span className="font-mono text-xs text-brand-primary font-bold tracking-widest uppercase">
+              [ 00 // LAB PROTOTYPES IN PROGRESS ]
+            </span>
+            <p className="font-['Space_Grotesk'] text-base sm:text-lg text-txt-primary font-medium">
+              {experiments.length === 0
+                ? 'Interactive prototypes and creative code tests are currently in development. Check back shortly.'
+                : 'No experiments match the selected category filter.'}
+            </p>
+            {experiments.length > 0 && (
+              <button
+                type="button"
+                onClick={() => setActiveCategory('all')}
+                className="font-mono text-xs text-txt-muted hover:text-brand-primary font-bold transition-colors cursor-pointer mt-1"
+              >
+                [ RESET FILTER TO ALL ↺ ]
+              </button>
+            )}
           </div>
         ) : (
           filteredExperiments.map((exp, idx) => {

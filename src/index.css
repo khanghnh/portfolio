@@ -1,24 +1,25 @@
 @import "tailwindcss";
 
+/* Hallmark · macrostructure: Asymmetric Minimal Split · genre: artistic-minimalism */
 @layer base {
   :root {
-    /* Sleek Dark Neo-Brutalism Core Palette (Deep Obsidian, Pure Graphite, Stark Crisp Off-White, Fiery Red-Orange) */
+    /* Sleek Dark Artistic Minimalism Palette (Deep Obsidian, Pure Graphite, Stark Crisp Off-White, Fiery Red-Orange) */
     --bg-main: #0c0c0c;               /* Deepest obsidian black backdrop */
     --bg-surface: #141414;            /* Elevated stark card surface */
     --bg-surface-hover: #1c1c1c;      /* Interactive card hover */
     --bg-card: #141414;
     --bg-card-hover: #1e1e1e;
-    --bg-muted: #242424;              /* Divider and subtle structural fills */
+    --bg-muted: #1e1e1e;              /* Divider and subtle structural fills */
 
     /* Inverted / Light components when needed */
     --bg-dark: #080808;
-    --bg-dark-surface: #111111;
+    --bg-dark-surface: #101010;
 
-    /* Structural Brutalist Borders */
-    --border-subtle: #262626;         /* 1px subtle divider rule */
-    --border-default: #383838;        /* Architectural structural border */
-    --border-heavy: #ffffff;          /* Stark contrast boundary */
-    --border-dark: #383838;
+    /* Seamless Artistic Minimalist Hairline Borders (Crisp & Distinct) */
+    --border-subtle: rgba(255, 255, 255, 0.16);   /* 1px crisp subtle divider rule */
+    --border-default: rgba(255, 255, 255, 0.24);  /* Clear architectural hairline border */
+    --border-heavy: rgba(255, 255, 255, 0.6);     /* Stark contrast boundary */
+    --border-dark: rgba(255, 255, 255, 0.16);
     --border-focus: #ff4500;
 
     /* Hard Brutalist Drop Shadows for Dark Mode (Stark white & Red-orange offsets) */

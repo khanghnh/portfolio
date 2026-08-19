@@ -9,9 +9,8 @@ const LegalPage = lazy(() => import('./pages/LegalPage').then(m => ({ default: m
 function PageLoader() {
   return (
     <div className="min-h-screen bg-[#060606] flex items-center justify-center font-mono text-xs text-[#ff4500]">
-      <div className="flex items-center gap-3">
-        <span className="w-2 h-2 rounded-full bg-[#ff4500] animate-ping" />
-        <span className="tracking-widest uppercase font-bold">LOADING TRANSMISSION...</span>
+      <div className="flex items-center gap-2">
+        <span className="tracking-widest uppercase font-bold">[ LOADING TRANSMISSION... ]</span>
       </div>
     </div>
   );

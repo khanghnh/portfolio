@@ -27,7 +27,7 @@ export interface SocialLink {
   id: string;
   platform: string;
   url: string;
-  type: 'github' | 'linkedin' | 'instagram' | 'facebook' | 'email' | string;
+  type: 'github' | 'behance' | 'linkedin' | 'email' | string;
 }
 
 export interface HeroData {

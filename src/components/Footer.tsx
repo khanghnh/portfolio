@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
   const footer: FooterData = footerData as FooterData;
 
   return (
-    <footer className="w-full border-t border-border-subtle bg-bg-surface py-6 sm:py-8 transition-colors">
+    <footer className="w-full bg-[#0a0a0a] py-6 sm:py-8 transition-colors">
       <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 font-mono text-[11px] sm:text-xs text-txt-muted text-center md:text-left">
 
         {/* Left: Identity & Position */}
