@@ -1,0 +1,31 @@
+{
+  "brand": {
+    "name": "KHANG HUYNH",
+    "role": "FULLSTACK DEVELOPER · GRAPHIC & MOTION DESIGNER",
+    "year": "2026",
+    "location": "HCMC, VIETNAM",
+    "status": "AVAILABLE FOR FULL-TIME & CONTRACT ROLES"
+  },
+  "legalLinks": [
+    {
+      "id": "privacy",
+      "label": "PRIVACY POLICY",
+      "href": "/privacy"
+    },
+    {
+      "id": "terms",
+      "label": "TERMS OF SERVICE",
+      "href": "/terms"
+    },
+    {
+      "id": "cookies",
+      "label": "COOKIE POLICY",
+      "href": "/cookies"
+    },
+    {
+      "id": "licenses",
+      "label": "LICENSES",
+      "href": "/licenses"
+    }
+  ]
+}

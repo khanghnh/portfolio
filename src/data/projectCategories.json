@@ -1,0 +1,6 @@
+[
+  { "id": "all", "label": "ALL DISCIPLINES" },
+  { "id": "website", "label": "WEBSITE" },
+  { "id": "mobile-app", "label": "MOBILE APP" },
+  { "id": "brand-design", "label": "BRAND DESIGN" }
+]

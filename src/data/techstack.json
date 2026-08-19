@@ -1,0 +1,86 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "category": "Frontend",
+    "color": "#61DAFB",
+    "featuredInCarousel": true
+  },
+  {
+    "id": "nestjs",
+    "name": "NestJS",
+    "category": "Backend",
+    "color": "#E0234E",
+    "featuredInCarousel": true
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Language",
+    "color": "#3178C6",
+    "featuredInCarousel": true
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "category": "Language",
+    "color": "#F7DF1E",
+    "featuredInCarousel": true
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "category": "Runtime",
+    "color": "#5FA04E",
+    "featuredInCarousel": true
+  },
+  {
+    "id": "tailwind",
+    "name": "Tailwind CSS",
+    "category": "Styling",
+    "color": "#38BDF8",
+    "featuredInCarousel": true
+  },
+  {
+    "id": "photoshop",
+    "name": "Photoshop",
+    "category": "Graphics",
+    "color": "#31A8FF",
+    "featuredInCarousel": true
+  },
+  {
+    "id": "lightroom",
+    "name": "Lightroom",
+    "category": "Color",
+    "color": "#31A8FF",
+    "featuredInCarousel": true
+  },
+  {
+    "id": "illustrator",
+    "name": "Illustrator",
+    "category": "Vectors",
+    "color": "#FF9A00",
+    "featuredInCarousel": true
+  },
+  {
+    "id": "premiere",
+    "name": "Premiere Pro",
+    "category": "Video",
+    "color": "#EA77FF",
+    "featuredInCarousel": true
+  },
+  {
+    "id": "aftereffects",
+    "name": "After Effects",
+    "category": "Motion / Video",
+    "color": "#9999FF",
+    "featuredInCarousel": true
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "category": "VCS",
+    "color": "#F05032",
+    "featuredInCarousel": true
+  }
+]

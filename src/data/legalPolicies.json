@@ -1,0 +1,160 @@
+{
+  "documents": {
+    "privacy": {
+      "id": "privacy",
+      "slug": "privacy",
+      "title": "Privacy Policy",
+      "lastUpdated": "August 20, 2026",
+      "sections": [
+        {
+          "id": "data-controller",
+          "heading": "1. Data Controller & Scope",
+          "paragraphs": [
+            "This portfolio website is operated by Khang Huynh, Fullstack Developer & Designer based in Ho Chi Minh City, Vietnam. This Privacy Policy outlines how information is collected, processed, and protected when you visit this website or reach out for professional inquiries."
+          ]
+        },
+        {
+          "id": "information-collected",
+          "heading": "2. Information We Collect",
+          "paragraphs": [
+            "We collect minimal data necessary to provide a fast, secure, and functional browsing experience:",
+            "Direct Communication Data: When you contact us via email (mailto link) or professional networking links (LinkedIn, GitHub), we receive your email address, name, and any correspondence content you choose to share.",
+            "Technical Telemetry: Standard HTTP server logs and static hosting providers (such as Vercel, Cloudflare, or GitHub Pages) may automatically log basic diagnostic information such as your IP address, browser type, referring URL, and access timestamps for security, DDoS mitigation, and reliability monitoring."
+          ]
+        },
+        {
+          "id": "cookies-storage",
+          "heading": "3. Cookies & Local Storage",
+          "paragraphs": [
+            "This website does not use invasive advertising trackers, marketing cookies, or third-party behavioral profiling scripts.",
+            "We may utilize browser Local Storage strictly for client-side functional preferences, such as remembering your selected interface perspective (Developer mode vs Designer mode) or audio preferences during interactive sessions."
+          ]
+        },
+        {
+          "id": "data-use",
+          "heading": "4. How Information is Used",
+          "paragraphs": [
+            "Any information collected is used strictly for legitimate professional purposes:",
+            "To evaluate and respond to client project inquiries, freelance design/development contracts, or employment opportunities.",
+            "To maintain web application security, prevent malicious traffic, and optimize performance.",
+            "Under no circumstances is your personal data shared with data brokers, ad networks, or unauthorized third parties."
+          ]
+        },
+        {
+          "id": "your-rights",
+          "heading": "5. Your Rights (GDPR & International Compliance)",
+          "paragraphs": [
+            "Regardless of your jurisdiction, you retain full rights regarding any correspondence data we hold about you. You have the right to request access to, correction of, or complete deletion of past email communications.",
+            "To exercise any of these rights, simply send an email request to the contact address provided on the website."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "id": "terms",
+      "slug": "terms",
+      "title": "Terms of Service",
+      "lastUpdated": "August 20, 2026",
+      "sections": [
+        {
+          "id": "intellectual-property",
+          "heading": "1. Intellectual Property & Work Ownership",
+          "paragraphs": [
+            "All visual identities, custom typography pairings, graphic illustrations, design assets, and architectural case studies displayed on this portfolio are the intellectual property of Khang Huynh, unless explicitly stated as client-owned or third-party copyrighted assets.",
+            "Client Case Studies: Specific commercial branding, logos, and proprietary code featured in case studies remain the exclusive property of their respective client organizations and are showcased here strictly for educational and portfolio demonstration purposes under fair use."
+          ]
+        },
+        {
+          "id": "acceptable-use",
+          "heading": "2. Acceptable Use & Conduct",
+          "paragraphs": [
+            "Visitors are granted a limited, non-exclusive license to view, review, and evaluate the portfolio content.",
+            "You agree not to engage in unauthorized automated scraping, reverse engineering with malicious intent, denial-of-service attempts, or any activity that degrades website performance for other visitors."
+          ]
+        },
+        {
+          "id": "prototypes-disclaimer",
+          "heading": "3. Interactive Prototypes & Code Disclaimer",
+          "paragraphs": [
+            "The experimental code samples, interactive 2D canvas physics, microservices architectures, and demo web applications provided across this website are delivered on an 'AS IS' and 'AS AVAILABLE' basis without warranty of any kind.",
+            "Khang Huynh is not liable for any incidental or consequential damages arising from the use, adaptation, or execution of prototype algorithms found in experimental showcases."
+          ]
+        },
+        {
+          "id": "external-links",
+          "heading": "4. Third-Party Links & Repositories",
+          "paragraphs": [
+            "This portfolio contains external links to third-party services, including GitHub repositories, live production applications, Figma community files, and social media platforms. We do not control or endorse the content, uptime, or privacy practices of external websites."
+          ]
+        },
+        {
+          "id": "modifications",
+          "heading": "5. Modifications to Terms",
+          "paragraphs": [
+            "These Terms of Service may be updated periodically to reflect changes in project offerings or legal standards. Continued use of this website following any revisions signifies your acceptance of the updated terms."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "id": "cookies",
+      "slug": "cookies",
+      "title": "Cookie Policy",
+      "lastUpdated": "August 20, 2026",
+      "sections": [
+        {
+          "id": "what-are-cookies",
+          "heading": "1. What Are Cookies & Local Storage?",
+          "paragraphs": [
+            "Cookies and Local Storage are small data structures stored directly inside your web browser. They allow modern web applications to remember user preferences, maintain session state, and provide fluid client-side routing without reloading full pages from the server."
+          ]
+        },
+        {
+          "id": "cookies-used",
+          "heading": "2. Storage Used on This Website",
+          "paragraphs": [
+            "Essential UI State (Local Storage): Used exclusively to preserve functional UI states (e.g. selected developer/designer persona filter and theme parameters) across navigation.",
+            "Zero Tracking Cookies: We do not deploy third-party advertising cookies, retargeting pixels, or surveillance beacons."
+          ]
+        },
+        {
+          "id": "managing-cookies",
+          "heading": "3. Managing Your Browser Storage",
+          "paragraphs": [
+            "You have full control over your browser's stored data. You can clear local storage or block cookies at any time through your browser's security and privacy settings without affecting your ability to view this portfolio's core content."
+          ]
+        }
+      ]
+    },
+    "licenses": {
+      "id": "licenses",
+      "slug": "licenses",
+      "title": "Open Source & Licenses",
+      "lastUpdated": "August 20, 2026",
+      "sections": [
+        {
+          "id": "open-source-code",
+          "heading": "1. Portfolio Source Code & MIT License",
+          "paragraphs": [
+            "Unless otherwise designated in a specific experiment repository, public code demonstrations authored by Khang Huynh are licensed under the standard MIT License:",
+            "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject to retaining the author's copyright notice."
+          ]
+        },
+        {
+          "id": "typography-licenses",
+          "heading": "2. Typography & Fonts",
+          "paragraphs": [
+            "Display and body typefaces utilized throughout this website (including Anton, DM Sans, Space Grotesk, Space Mono, and Instrument Serif) are distributed under the SIL Open Font License (OFL) or Apache License 2.0 via Google Fonts and their respective type designers."
+          ]
+        },
+        {
+          "id": "third-party-libraries",
+          "heading": "3. Core Open Source Libraries",
+          "paragraphs": [
+            "This application utilizes React (MIT License), Tailwind CSS (MIT License), Vite (MIT License), Lucide Icons (ISC License), and related ecosystem packages. All third-party trademarks, logos, and framework brand assets belong to their respective copyright holders."
+          ]
+        }
+      ]
+    }
+  }
+}
